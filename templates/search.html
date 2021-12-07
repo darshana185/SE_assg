@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{%block head%}Search{%endblock%}
+{%block title%}Search{%endblock%}
+
+{% block content %}
+<form action="" class="YourFormClass" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+</form>
+{% endblock %}

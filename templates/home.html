@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{%block head%}Interface{%endblock%}
+{%block title%}Interface{%endblock%}
+
+{% block content %}
+<br>
+<button type="button"><a href="{% url 'update'%}">update</a></button>
+<br>
+<button type="button"><a href="{% url 'search'%}">search</a></button>
+{% endblock %}
+
